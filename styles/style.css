@@ -117,7 +117,7 @@
   font-size: 18px;
   background-color:var(--accent-color);
   color: var(--text-color);
-  margin-top:17px;
+  margin-top:20px;
 
 }
 .main__paragraph{
@@ -125,7 +125,6 @@
   line-height: 23.4px;
   color: var(--main-paragraph);
   margin-top: 11px;
-  marg
 }
 
 .main__section-two{
