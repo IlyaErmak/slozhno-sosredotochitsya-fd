@@ -299,4 +299,18 @@
   .tall{
     grid-row: span 2;
   }
+  .footer__right-top{
+    top: 80px;
+    right: 20px;
+  }
+  .footer__text{
+    margin-top: 65px;
+  }
+  .main__footer{
+    height: 1084px;
+  }
+  .footer__left-bottom{
+    left:20px;
+    bottom: 20px;
+  }
 }
