@@ -263,8 +263,11 @@
   }
   .main__section-two{
     padding-top: 65px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .article-tablet{
-    margin-right:600px;
+    margin-right:500px;
+    margin-left: 0px;
   }
 }
