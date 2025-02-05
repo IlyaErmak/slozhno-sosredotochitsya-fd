@@ -108,9 +108,9 @@
 
 .button__rec::after {
   content: "";
-  display: block; 
-  border-radius: 50%; 
-  inline-size: 0.5rem; 
+  display: block;
+  border-radius: 50%;
+  inline-size: 0.5rem;
   block-size: 0.5rem;
   background: var(--accent-color);
   box-shadow: 0 0 4px 2px var(--accent-color);

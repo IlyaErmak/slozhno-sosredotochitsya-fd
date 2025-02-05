@@ -114,7 +114,7 @@
   }
 }
 
-@media (width >= 1024px){
+@media (width >= 1024px) {
   .decorated-zone {
     display: grid;
     grid-template-columns: 196px 196px 240px 196px 196px;
