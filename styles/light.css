@@ -12,10 +12,13 @@
   --background-color:#FFF1F7;
   --main-article-text:#353430;
   --main-paragraph: #353430;
+  --border-hover: #32312D66;
 }
 
 .theme-light .page {
-  background-image: var(--background-image);
+  background-image:var(--background-image);
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .theme-light .button__rec::after {
