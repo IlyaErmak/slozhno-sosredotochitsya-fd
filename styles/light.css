@@ -15,5 +15,14 @@
 }
 
 .theme-light .page {
-  
+  background-image: var(--background-image);
+}
+
+.theme-light .button__rec::after {
+  background: transparent;
+  box-shadow: none;
+}
+
+.theme-light .main__button-rec p {
+  color: transparent;
 }
