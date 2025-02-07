@@ -147,7 +147,7 @@
 .group__blocks {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 27px;
 }
 
 .description {
@@ -157,7 +157,7 @@
 }
 
 .main__section-img {
-  padding-top: 70px;
+  padding-top: 63px;
   margin-left: 10px;
   margin-right: 10px;
 }
