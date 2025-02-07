@@ -139,16 +139,15 @@
 .height {
   margin-top: 10px;
 }
+
 .height_big {
   margin-top: 15px;
 }
-.height {
-  margin-top: 10px;
-}
+
 .group__blocks {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
 }
 
 .description {
