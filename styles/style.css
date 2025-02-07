@@ -130,7 +130,7 @@
 .section-title {
   margin-right: 10px;
   margin-left: 10px;
-  padding-top: 40px;
+  padding-top: 45px;
   display: grid;
   gap: 20px;
 }
@@ -146,11 +146,6 @@
   color: var(--main-paragraph);
   margin-top: 10px;
 }
-
-.height {
-  margin-top:10px;
-}
-
 
 .main__section-img {
   padding-top: 30px;
