@@ -127,6 +127,7 @@
   font-size: 18px;
   color: var(--main-article-text);
 }
+
 .section-title {
   margin-right: 10px;
   margin-left: 10px;
@@ -135,6 +136,9 @@
   gap: 20px;
 }
 
+.height {
+  margin-top: 25px;
+}
 .group__blocks {
   display: flex;
   flex-direction: column;
