@@ -1,15 +1,3 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-:root {
-  --background-image: url("../images/cover-image-dark.png");
-  --accent-color: #ff0070;
-  --text-main-color: #db00ff;
-  --text-color: #000028;
-  --background-color: #000028;
-  --main-article-text: #ff0070;
-  --main-paragraph: #f1b2ce;
-  --border-hover: #ff007066;
-}
-
 .page {
   background-image: var(--background-image);
   background-position: center;
@@ -17,13 +5,12 @@
   background-size: cover;
 }
 
-.main__background {
+.main__container {
   background-color: var(--background-color);
 }
 
 .header {
   margin-top: 10px;
-  margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 13px;
   display: grid;
@@ -34,7 +21,7 @@
 .decorated-zone {
   grid-column: 3;
   grid-row: 1;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--main-article-text);
   border-bottom: none;
   border-left: none;
   width: 25px;
@@ -42,11 +29,24 @@
   justify-self: end;
 }
 
+.decorated-zone::after { 
+  content: ""; 
+  display: block; 
+  border-radius: 50%; 
+  inline-size: 9px; 
+  block-size: 9px; 
+  background: var(--main-article-text); 
+  box-shadow: 0 0 4px 2px var(--main-article-text); 
+  margin-left: 7px; 
+  margin-top: 7px; 
+}
+
 .decorated-zone-down {
   grid-column: 1;
   grid-row: 5;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--main-article-text);
   margin-top: 33px;
+  margin-left: 10px;
   border-top: none;
   border-right: none;
   width: 25px;
@@ -92,6 +92,31 @@
   border: 1px solid var(--main-article-text);
 }
 
+.header__theme-menu-button:hover { 
+  border: 1px solid var(--border-hover); 
+} 
+ 
+.header__theme-menu-button:focus-visible { 
+  border: 1px solid var(--main-article-text); 
+  border-top: none; 
+  border-left: none; 
+  border-right: none; 
+} 
+
+.main__link {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  text-decoration: none;
+} 
+ 
+.main__link:hover {
+  text-decoration: underline;
+} 
+ 
+.main__link:focus-visible {
+  border: 1px solid var(--main-paragraph);
+  text-decoration: none;
+}
+
 .main__text {
   grid-column: span 2;
   grid-row: 3;
@@ -100,6 +125,7 @@
   text-shadow: 4px 4px 0 var(--accent-color);
   color: var(--text-main-color);
   margin-bottom: 50px;
+  margin-left: 10px;
 }
 
 .article__tittle {
@@ -111,13 +137,14 @@
   color: var(--main-article-text);
 }
 
-.header__main-text {
+.header__description {
   grid-row: 4;
   grid-column: span 3;
+  margin-left: 10px;
 }
 
 .title-block {
-  background-color: var(--main-article-text);
+  background-color: var(--accent-color);
   color: var(--text-color);
   font-weight: bold;
   font-size: 18px;
@@ -131,13 +158,13 @@
 .section-title {
   margin-right: 10px;
   margin-left: 10px;
-  padding-top: 52px;
+  padding-top: 42px;
   display: grid;
   gap: 20px;
 }
 
-.height_big {
-  margin-top: 5px;
+.height {
+  margin-top: 9px;
 }
 
 .group__blocks {
@@ -169,15 +196,183 @@
   width: 100%;
 }
 
-.footer__position {
+.footer-container {
   padding-right: 10px;
-  padding-left: 10px;
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .footer__text-position {
-  margin-top: 255px;
+  margin-top: 250px;
   margin-bottom: 250px;
   text-align: center;
+}
+
+.footer-container .decorated-zone::after {
+  display: none;
+}
+
+
+@media (width >= 768px) {
+  .header {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .header__theme-menu {
+    margin-top: 120px;
+  }
+  .main__text {
+    grid-column: span 3;
+    margin-top: 110px;
+    margin-bottom: 165px;
+    margin-left: 0px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+  .header__description {
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    margin-bottom: 103px;
+  }
+  .decorated-zone-down {
+    margin-left: 20px;
+  }
+  .section-title {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-top: 65px;
+    grid-template-columns: 236px 1fr;
+  }
+
+  .height {
+    display: grid;
+    margin-top: 15px;
+    grid-template-columns: 1fr;
+  }
+
+  .article-tablet {
+    margin-right: 500px;
+  }
+
+  .height_big {
+    margin-top: 10px;
+  }
+
+  .main__section-img {
+    padding-top: 74px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .main__images-block {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 192px 230px 318px;
+    gap: 19px;
+    max-height: 780px;
+    object-fit: fill;
+  }
+
+  .images-block {
+    height: 100%;
+    margin-top: 10px;
+    object-fit: cover;
+  }
+
+  .wide {
+    grid-column: span 2;
+  }
+
+  .tall {
+    grid-row: span 2;
+  }
+  
+  .footer-container {
+    padding-top: 95px;
+    padding-right: 20px;
+  }
+
+  .footer__text-position {
+    margin-top: 415px;
+    margin-bottom: 420px;
+    margin-left: 20px;
+  }
+}
+
+@media (width >= 1024px) {
+  .header {
+    grid-template-columns: 1fr min-content 1fr;
+    grid-template-rows: 210px min-content max-content 1fr 35px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .header__theme-menu {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 0px;
+    margin-left: 13px;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .main__text {
+    margin-bottom: 125px;
+  }
+
+  .header__description {
+    margin-left: 130px;
+    margin-bottom: 93px;
+  }
+
+  .decorated-zone-down {
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+
+  .section-title {
+    margin-top: 0px;
+    grid-template-columns: 315px 1fr;
+  }
+
+  .height {
+    grid-template-rows: 50px 413px;
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+
+  .article-tablet {
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  .three-block__title {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 315px);
+  }
+
+  .height_big {
+    margin-top: 30px;
+  }
+
+  .main__images-block {
+    grid-template-rows: 260px 315px 433px;
+    gap: 19px;
+    max-height: 780px;
+    object-fit: fill;
+  }
+
+  .footer-container {
+    padding-top: 360px;
+    padding-left: 0px;
+  }
+
+  .footer__text-position {
+    margin-top: 285px;
+    margin-bottom: 295px;
+    margin-left: 20px;
+  }
 }
