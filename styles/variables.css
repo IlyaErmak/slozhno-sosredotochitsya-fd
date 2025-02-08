@@ -45,11 +45,12 @@
     margin-left: 20px;
     margin-right: 20px;
   }
+  
   .main__images-block { 
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: auto 230px auto; 
     gap: 19px; 
-    max-height: 780px; 
+    max-height: 753px; 
     object-fit: fill; 
   }
 
