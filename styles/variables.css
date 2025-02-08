@@ -30,6 +30,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 100px repeat(3 770px);
   }
+
   .article-tablet {
     margin-top: 10px;
     margin-right: 500px;
@@ -37,5 +38,8 @@
 
   .height_big {
     margin-top: 25px;
+  }
+  .main__section-img {
+    padding-top: 60px;
   }
 }
