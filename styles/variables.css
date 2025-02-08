@@ -66,5 +66,12 @@
   .tall { 
     grid-row: span 2; 
   } 
-  
+  .footer__position {
+    padding-top: 80px;
+  }
+
+  .footer__text-position {
+    margin-top: 385px;
+    margin-bottom: 390px;
+  }
 }
