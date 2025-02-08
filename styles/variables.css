@@ -40,6 +40,8 @@
     margin-top: 25px;
   }
   .main__section-img {
-    padding-top: 60px;
+    padding-top: 64px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
