@@ -39,9 +39,31 @@
   .height_big {
     margin-top: 25px;
   }
+
   .main__section-img {
     padding-top: 64px;
     margin-left: 20px;
     margin-right: 20px;
   }
+  .main__images-block { 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto 230px auto; 
+    gap: 19px; 
+    max-height: 780px; 
+    object-fit: fill; 
+  }
+  
+  .images-block {
+    height: 100%;
+    object-fit:cover; 
+  } 
+ 
+  .wide { 
+    grid-column: span 2; 
+  } 
+ 
+  .tall { 
+    grid-row: span 2; 
+  } 
+  
 }
