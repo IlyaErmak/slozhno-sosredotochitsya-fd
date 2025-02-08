@@ -19,7 +19,7 @@
     margin-bottom: 103px;
   }
   .section-title {
-    margin-top: 35px;
+    margin-top: 40px;
     margin-right: 20px;
     margin-left: 20px;
     grid-template-columns: 236px 1fr;
@@ -29,5 +29,8 @@
     margin-top: 20px;
     grid-template-columns: 1fr;
     grid-template-rows: 100px repeat(3 770px);
+  }
+  .article-tablet {
+    margin-right: 500px;
   }
 }
