@@ -31,6 +31,7 @@
     grid-template-rows: 100px repeat(3 770px);
   }
   .article-tablet {
+    margin-top: 10px;
     margin-right: 500px;
   }
 }
