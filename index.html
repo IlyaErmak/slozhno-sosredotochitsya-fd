@@ -18,9 +18,7 @@
   <body class="page">
     <header class="header">
       <p class="text">REC</p>
-      <div class="decorated-zone">
-        <div class="button__rec"></div>
-      </div>
+      <div class="decorated-zone button__rec" aria-hidden="true"></div>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -48,7 +46,7 @@
         </ul>
       </nav>
       <h1 class="main__text">no focus</h1>
-      <article class="title-block header__main-text">
+      <article class="title-block header__description">
         <p>Что делать, когда не можешь делать ничего</p>
         <p>
           Или почему нам так сложно сконцентрироваться, особенно когда очень
@@ -57,7 +55,7 @@
       </article>
       <div class="decorated-zone-down"></div>
     </header>
-    <main class="main__background">
+    <main class="main__container">
       <section class="section-title">
         <h2 class="title__article">Почему сосредоточиться так сложно</h2>
         <div class="group__blocks">
@@ -67,7 +65,8 @@
               Особенно сложно сосредоточиться, когда задач много и все они —
               важные. Где же легендарная многозадачность, когда она так нужна
               вам (и всем нанимающим менеджерам этого мира)? А дело в том, что
-              её просто не существует. Исследователи выяснили, что мозгу тяжело
+              её просто не существует. Исследователи
+              <a href="#" class="main__link">выяснили</a>, что мозгу тяжело
               концентрироваться даже на двух делах одновременно. А когда в поле
               внимания попадает несколько важных задач, организм паникует и
               выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы
@@ -166,12 +165,12 @@
               <h4 class="title-block">Прогуляйтесь</h4>
               <p class="description">
                 Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
-                показал, что созерцание природы повышает концентрацию, в то
-                время как после просмотра городских пейзажей она наоборот
-                понижается. Можно совместить прогулку с физическими упражнениями
-                или бегом — так в мозг поступит ещё больше кислорода и он будет
-                лучше работать. Но и простая двадцатиминутная прогулка — тоже
-                отличный вариант.
+                <a href="#" class="main__link">показал</a>, что созерцание
+                природы повышает концентрацию, в то время как после просмотра
+                городских пейзажей она наоборот понижается. Можно совместить
+                прогулку с физическими упражнениями или бегом — так в мозг
+                поступит ещё больше кислорода и он будет лучше работать. Но и
+                простая двадцатиминутная прогулка — тоже отличный вариант.
               </p>
             </article>
             <article>
@@ -272,10 +271,10 @@
         </ul>
       </section>
     </main>
-    <footer class="main__background footer__position">
-      <div class="decorated-zone"></div>
+    <footer class="main__container footer-container">
+      <div class="decorated-zone" aria-hidden="true"></div>
       <h6 class="main__text footer__text-position">focus</h6>
-      <div class="decorated-zone-down"></div>
+      <div class="decorated-zone-down" aria-hidden="true"></div>
     </footer>
   </body>
 </html>
