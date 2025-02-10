@@ -8,11 +8,28 @@
   --main-paragraph: #353430;
   --border-hover: #32312d66;
 }
-
 .theme-light .text {
   visibility: hidden;
 }
-
 .theme-light .decorated-zone::after {
   visibility: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-image: url("../images/cover-image-light.png");
+    --accent-color: #ff8dcb;
+    --text-main-color: #ffc2e6;
+    --text-color: #353430;
+    --background-color: #fff1f7;
+    --main-article-text: #353430;
+    --main-paragraph: #353430;
+    --border-hover: #32312d66;
+  }
+  .text {
+    visibility: hidden;
+  }
+  .decorated-zone::after {
+    visibility: hidden;
+  }
 }

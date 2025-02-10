@@ -1,0 +1,29 @@
+:root.theme-dark {
+  --background-image: url("../images/cover-image-dark.png");
+  --accent-color: #ff0070;
+  --text-main-color: #db00ff;
+  --text-color: #000028;
+  --background-color: #000028;
+  --main-article-text: #ff0070;
+  --main-paragraph: #f1b2ce;
+  --border-hover: #ff007066;
+}
+.theme-dark .text {
+  visibility: visible;
+}
+.theme-dark .decorated-zone::after {
+  visibility: visible;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-image: url("../images/cover-image-dark.png");
+    --accent-color: #ff0070;
+    --text-main-color: #db00ff;
+    --text-color: #000028;
+    --background-color: #000028;
+    --main-article-text: #ff0070;
+    --main-paragraph: #f1b2ce;
+    --border-hover: #ff007066;
+  }
+}
